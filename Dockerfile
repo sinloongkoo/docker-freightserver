@@ -34,5 +34,6 @@ RUN cd /           && \
     git clone https://github.com/vladikoff/freight-server.git . && \
     npm install
 
+WORKDIR /app
 CMD ["npm", "start"]
 EXPOSE 8872
