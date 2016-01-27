@@ -15,7 +15,7 @@ RUN yum -y install \
 
 # Install redis from the EPEL repo
 RUN yum -y install epel-release; \
-    yum -y redis;
+    yum -y install redis;
 
 # Redirect output from log file to STDout.    
 RUN sed -i 's/^\(logfile\s*\).*$/\1""/g' /etc/redis.conf
