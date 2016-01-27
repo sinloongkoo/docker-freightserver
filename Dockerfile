@@ -1,5 +1,6 @@
 FROM centos:centos7
-MAINTAINER: BringTheDip.com Technical Team <devops@bringthedip.com>
+MAINTAINER BringTheDip.com Technical Team <devops@bringthedip.com>
+
 
 # Update all installed packages to make sure system is tip-top.
 RUN yum -y update;  \
