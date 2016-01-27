@@ -14,7 +14,7 @@ RUN yum -y install \
     git
 
 # Install redis from the EPEL repo
-RUN yum -y install epel-release; 
+RUN yum -y install epel-release; \
     yum -y redis;
 
 # Redirect output from log file to STDout.    
