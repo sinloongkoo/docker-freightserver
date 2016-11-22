@@ -24,7 +24,7 @@ RUN sed -i 's/^\(logfile\s*\).*$/\1""/g' /etc/redis.conf
 RUN yum -y install \
     gcc-c++ \
     make
-RUN	curl --silent --location https://rpm.nodesource.com/setup_5.x | bash -
+RUN	curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 RUN yum -y install nodejs
 
 # Install freight to /app
