@@ -31,9 +31,11 @@ RUN yum -y install nodejs
 RUN cd /           && \
     mkdir app      && \
     cd app         && \
-    git clone https://github.com/sinloongkoo/docker-freightserver.git . && \
+    git clone https://github.com/sinloongkoo/freight-server.git . && \
     npm install
 
+COPY dev.json /app/config/dev.json
+    
 WORKDIR /app
 CMD ["npm", "start"]
 EXPOSE 8872
