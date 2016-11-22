@@ -31,7 +31,7 @@ RUN yum -y install nodejs
 RUN cd /           && \
     mkdir app      && \
     cd app         && \
-    git clone https://github.com/vladikoff/freight-server.git . && \
+    git clone https://github.com/sinloongkoo/docker-freightserver.git . && \
     npm install
 
 WORKDIR /app
